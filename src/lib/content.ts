@@ -20,6 +20,8 @@ export const navLinks = [
 export const assets = {
   logo: "/crevesha-logo.svg",
   heroImage: "/crevesha-hero.png",
+  aboutImage:
+    "https://www.scmdojo.com/wp-content/uploads/2025/12/18-Key-Supply-Chain-Skills-Job-Descriptions-Demand-Blog-Banner-scaled.png",
 };
 
 export const headerNav = [
@@ -59,6 +61,8 @@ export const hero = {
 
 export const about = {
   title: "Who We Are",
+  imageAlt:
+    "Supply chain infographic showing procurement, planning, and logistics",
   paragraphs: [
     "Crevesha is a forward-thinking company committed to delivering quality goods and tender consultancy services to individuals, businesses, and organizations—unlocking growth through timely deliveries and professional advisory services.",
     "We combine professionalism, integrity, and innovation to serve state corporations, NGOs, self-help groups, startups, private companies, and individuals.",

@@ -26,13 +26,13 @@ export function About() {
           </FadeIn>
 
           <FadeIn delay={0.15}>
-            <div className="relative aspect-[16/10] overflow-hidden rounded-brand shadow-card">
+            <div className="relative aspect-[21/9] overflow-hidden rounded-brand shadow-card sm:aspect-[2/1]">
               <Image
-                src={assets.heroImage}
-                alt="Crevesha team at work in Nairobi"
+                src={assets.aboutImage}
+                alt={about.imageAlt}
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
-                className="object-cover object-[50%_42%]"
+                className="object-cover object-center"
               />
             </div>
           </FadeIn>
