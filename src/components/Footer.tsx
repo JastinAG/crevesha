@@ -16,7 +16,7 @@ export function Footer() {
       <div className="mx-auto max-w-6xl px-4 py-14 md:px-6">
         <div className="flex flex-col gap-10 md:flex-row md:items-start md:justify-between">
           <div className="space-y-4">
-            <Logo variant="light" className="[&_img]:h-14" />
+            <Logo variant="footer" />
             <p className="max-w-md text-sm leading-relaxed text-brand-white/80">
               {footer.tagline}
             </p>

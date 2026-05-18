@@ -1,10 +1,10 @@
 "use client";
 
-import { assets, headerNav, siteConfig } from "@/lib/content";
+import { Logo } from "@/components/Logo";
+import { headerNav, siteConfig } from "@/lib/content";
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
@@ -24,20 +24,7 @@ export function Navbar() {
       aria-label="Main navigation"
     >
       <div className="mx-auto flex max-w-site items-center justify-between px-md py-sm">
-        <Link
-          href="/"
-          className="inline-flex shrink-0 items-center"
-          aria-label={`${siteConfig.name} home`}
-        >
-          <Image
-            src={assets.logo}
-            alt={`${siteConfig.name} logo`}
-            width={220}
-            height={220}
-            className="h-16 w-auto sm:h-[4.5rem] md:h-20"
-            priority
-          />
-        </Link>
+        <Logo variant="dark" />
 
         <ul className="hidden items-center gap-md md:flex">
           {headerNav.map((link) => {

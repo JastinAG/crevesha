@@ -92,18 +92,18 @@ export function Hero() {
             </motion.p>
 
             <motion.div
-              className="flex flex-wrap gap-md pt-sm"
+              className="flex flex-row flex-wrap items-center gap-3 pt-sm sm:gap-md"
               {...fadeUp(prefersReducedMotion, 0.25)}
             >
               <Link
                 href={hero.primaryCta.href}
-                className="rounded-xl bg-brand-secondary px-lg py-[18px] text-label-md font-bold text-white shadow-lg shadow-black/20 transition-all hover:brightness-110"
+                className="order-1 shrink-0 whitespace-nowrap rounded-xl bg-brand-secondary px-5 py-3.5 text-label-md font-bold text-white shadow-lg shadow-black/20 transition-all hover:brightness-110 sm:px-lg sm:py-[18px]"
               >
                 {hero.primaryCta.label}
               </Link>
               <Link
                 href={hero.secondaryCta.href}
-                className="rounded-xl border border-white/20 bg-white/5 px-lg py-[18px] text-label-md font-bold text-white backdrop-blur-sm transition-all hover:bg-white/10"
+                className="order-2 shrink-0 whitespace-nowrap rounded-xl border border-white/20 bg-white/5 px-5 py-3.5 text-label-md font-bold text-white backdrop-blur-sm transition-all hover:bg-white/10 sm:px-lg sm:py-[18px]"
               >
                 {hero.secondaryCta.label}
               </Link>
