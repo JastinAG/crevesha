@@ -23,7 +23,7 @@ export function Navbar() {
       className="sticky top-0 z-50 border-b border-brand-primary/8 bg-[#f3eff8] shadow-sm backdrop-blur-md"
       aria-label="Main navigation"
     >
-      <div className="mx-auto flex max-w-site items-center justify-between px-md py-sm">
+      <div className="mx-auto flex max-w-site items-center justify-between gap-3 px-md py-1 md:py-1.5">
         <Logo variant="dark" />
 
         <ul className="hidden items-center gap-md md:flex">

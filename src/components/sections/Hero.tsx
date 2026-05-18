@@ -62,7 +62,7 @@ export function Hero() {
       >
         <div className="grid items-start gap-8 lg:grid-cols-12 lg:gap-10">
           {/* Left column */}
-          <div className="z-10 space-y-6 lg:col-span-5 lg:space-y-lg lg:pt-2">
+          <div className="z-10 space-y-6 lg:col-span-6 lg:space-y-lg lg:pt-2">
             <motion.div
               className="inline-flex items-center gap-xs rounded-full border border-white/20 bg-white/10 px-sm py-xs backdrop-blur-md"
               {...fadeUp(prefersReducedMotion, 0.1)}
@@ -92,18 +92,18 @@ export function Hero() {
             </motion.p>
 
             <motion.div
-              className="flex flex-row flex-wrap items-center gap-3 pt-sm sm:gap-md"
+              className="flex w-full max-w-full flex-col gap-3 pt-sm md:flex-row md:flex-nowrap md:items-center md:gap-4"
               {...fadeUp(prefersReducedMotion, 0.25)}
             >
               <Link
                 href={hero.primaryCta.href}
-                className="order-1 shrink-0 whitespace-nowrap rounded-xl bg-brand-secondary px-5 py-3.5 text-label-md font-bold text-white shadow-lg shadow-black/20 transition-all hover:brightness-110 sm:px-lg sm:py-[18px]"
+                className="inline-flex shrink-0 items-center justify-center whitespace-nowrap rounded-xl bg-brand-secondary px-4 py-3 text-sm font-bold text-white shadow-lg shadow-black/20 transition-all hover:brightness-110 sm:px-5 sm:py-3.5 sm:text-label-md"
               >
                 {hero.primaryCta.label}
               </Link>
               <Link
                 href={hero.secondaryCta.href}
-                className="order-2 shrink-0 whitespace-nowrap rounded-xl border border-white/20 bg-white/5 px-5 py-3.5 text-label-md font-bold text-white backdrop-blur-sm transition-all hover:bg-white/10 sm:px-lg sm:py-[18px]"
+                className="inline-flex shrink-0 items-center justify-center whitespace-nowrap rounded-xl border border-white/20 bg-white/5 px-4 py-3 text-sm font-bold text-white backdrop-blur-sm transition-all hover:bg-white/10 sm:px-5 sm:py-3.5 sm:text-label-md"
               >
                 {hero.secondaryCta.label}
               </Link>
@@ -135,7 +135,7 @@ export function Hero() {
 
           {/* Right column — image + floating badge */}
           <motion.div
-            className="relative w-full lg:col-span-7 lg:col-start-6"
+            className="relative w-full lg:col-span-6 lg:col-start-7"
             {...fadeUp(prefersReducedMotion, 0.2)}
           >
             <div className="group relative z-10 ml-auto w-full">
