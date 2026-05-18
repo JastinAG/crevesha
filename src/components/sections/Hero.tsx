@@ -57,12 +57,12 @@ export function Hero() {
       </div>
 
       <motion.div
-        className="relative z-10 mx-auto max-w-site px-md pb-[120px] pt-xl"
+        className="relative z-10 mx-auto max-w-site px-md pb-16 pt-4 md:pb-20 md:pt-6 lg:pb-24"
         {...fadeUp(prefersReducedMotion)}
       >
-        <div className="grid items-center gap-lg lg:grid-cols-12">
+        <div className="grid items-start gap-8 lg:grid-cols-12 lg:gap-10">
           {/* Left column */}
-          <div className="z-10 space-y-lg lg:col-span-5">
+          <div className="z-10 space-y-6 lg:col-span-5 lg:space-y-lg lg:pt-2">
             <motion.div
               className="inline-flex items-center gap-xs rounded-full border border-white/20 bg-white/10 px-sm py-xs backdrop-blur-md"
               {...fadeUp(prefersReducedMotion, 0.1)}
@@ -135,22 +135,23 @@ export function Hero() {
 
           {/* Right column — image + floating badge */}
           <motion.div
-            className="relative mt-lg lg:col-span-7 lg:mt-0"
+            className="relative w-full lg:col-span-7 lg:col-start-6"
             {...fadeUp(prefersReducedMotion, 0.2)}
           >
-            <div className="group relative z-10">
-              <div className="relative aspect-[16/10] w-full min-h-[280px] overflow-hidden rounded-[2rem] border-8 border-white/5 shadow-2xl lg:min-h-[360px]">
+            <div className="group relative z-10 ml-auto w-full">
+              <div className="relative aspect-[16/9] w-full overflow-hidden rounded-[1.25rem] border-4 border-white/10 shadow-2xl ring-1 ring-white/10 lg:rounded-[2rem]">
                 <Image
                   src={assets.heroImage}
                   alt={hero.imageAlt}
                   fill
                   priority
-                  sizes="(max-width: 1024px) 100vw, 58vw"
-                  className="object-cover object-[50%_42%] transition-transform duration-700 group-hover:scale-[1.03]"
+                  quality={90}
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  className="object-cover object-[52%_38%] transition-transform duration-700 group-hover:scale-[1.02]"
                 />
               </div>
 
-              <div className="ambient-shadow absolute -bottom-10 -right-4 flex items-center gap-md rounded-2xl border border-outline-variant/30 bg-surface p-lg lg:-right-10">
+              <div className="ambient-shadow absolute -bottom-8 right-2 flex items-center gap-md rounded-2xl border border-outline-variant/30 bg-surface p-4 shadow-lg md:p-lg lg:-right-6">
                 <div className="flex h-14 w-14 items-center justify-center rounded-full bg-brand-secondary/10">
                   <BadgeCheck
                     className="h-8 w-8 text-brand-secondary"
@@ -170,7 +171,7 @@ export function Hero() {
             </div>
 
             <div
-              className="absolute left-[-5rem] top-1/2 h-40 w-40 rounded-full bg-brand-secondary/10 blur-[100px]"
+              className="pointer-events-none absolute -right-8 top-6 h-32 w-32 rounded-full bg-brand-secondary/10 blur-[80px] lg:-right-12"
               aria-hidden
             />
           </motion.div>
