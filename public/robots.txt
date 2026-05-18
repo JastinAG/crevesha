@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://crevesha.co.ke/sitemap.xml
